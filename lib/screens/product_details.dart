@@ -1035,6 +1035,53 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                       ),
                     ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return CommonWebviewScreen(
+                            url:
+                                // "${AppConfig.RAW_BASE_URL}/mobile-page/seller-policy",
+                                "https://usbdshopping.com/mobile-seller-policy",
+                            page_name: AppLocalizations.of(context)
+                                .product_details_screen_seller_policy,
+                            // page_name: AppLocalizations.of(context)
+                            //     .product_details_screen_support_policy,
+                          );
+                        }));
+                      },
+                      child: Container(
+                        height: 40,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(
+                            16.0,
+                            0.0,
+                            8.0,
+                            0.0,
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                AppLocalizations.of(context)
+                                    .product_details_screen_seller_policy,
+                                // AppLocalizations.of(context)
+                                //     .product_details_screen_support_policy,
+                                style: TextStyle(
+                                    color: MyTheme.font_grey,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              Spacer(),
+                              Icon(
+                                Ionicons.ios_add,
+                                color: MyTheme.font_grey,
+                                size: 24,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                     Divider(
                       height: 1,
                     ),
@@ -1045,7 +1092,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           return CommonWebviewScreen(
                             url:
                                 // "${AppConfig.RAW_BASE_URL}/mobile-page/seller-policy",
-                                "https://usbdshopping.com/support-policy",
+                                "https://usbdshopping.com/mobile-support-policy",
                             // page_name: AppLocalizations.of(context)
                             //     .product_details_screen_seller_policy,
                             page_name: AppLocalizations.of(context)
@@ -1095,7 +1142,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           return CommonWebviewScreen(
                             url:
                                 // "${AppConfig.RAW_BASE_URL}/mobile-page/return-policy",
-                                "https://usbdshopping.com/return-policy",
+                                "https://usbdshopping.com/mobile-return-policy",
                             page_name: AppLocalizations.of(context)
                                 .product_details_screen_return_policy,
                           );
@@ -1141,7 +1188,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           return CommonWebviewScreen(
                             url:
                                 // "${AppConfig.RAW_BASE_URL}/mobile-page/support-policy",
-                                "https://usbdshopping.com/privacy-policy",
+                                "https://usbdshopping.com/mobile-privacy-policy",
                             // page_name: AppLocalizations.of(context)
                             //     .product_details_screen_support_policy,
                             page_name: "Privacy Policy",
