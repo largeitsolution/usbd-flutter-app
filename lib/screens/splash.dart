@@ -420,6 +420,7 @@ class _CustomSplashScreenState extends State<CustomSplashScreen> {
                       //   radius: widget.photoSize,
                       // ),
                       Container(
+                        height: 80,
                         width: 160,
                         child: widget.image,
                       ),

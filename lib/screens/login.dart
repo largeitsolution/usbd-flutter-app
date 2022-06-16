@@ -231,11 +231,11 @@ class _LoginState extends State<Login> {
         backgroundColor: Colors.white,
         body: Stack(
           children: [
-            Container(
-              width: _screen_width * (3 / 4),
-              // child: Image.asset(
-              //     "assets/splash_login_registration_background_image.png"),
-            ),
+            // Container(
+            //   width: _screen_width * (3 / 4),
+            //   // child: Image.asset(
+            //   //     "assets/splash_login_registration_background_image.png"),
+            // ),
             Container(
               width: double.infinity,
               child: SingleChildScrollView(
@@ -245,8 +245,8 @@ class _LoginState extends State<Login> {
                   Padding(
                     padding: const EdgeInsets.only(top: 40.0, bottom: 15),
                     child: Container(
-                      width: 75,
-                      height: 75,
+                      width: 145,
+                      height: 95,
                       child: Image.asset(
                           'assets/login_registration_form_logo.png'),
                     ),

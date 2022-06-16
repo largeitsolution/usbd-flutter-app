@@ -1035,6 +1035,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                       ),
                     ),
+                    Divider(
+                      height: 1,
+                    ),
                     InkWell(
                       onTap: () {
                         Navigator.push(context,
