@@ -44,6 +44,7 @@ class _LoginState extends State<Login> {
   void initState() {
     //on Splash Screen hide statusbar
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+    allow_google_login.load();
     super.initState();
   }
 
@@ -353,7 +354,7 @@ class _LoginState extends State<Login> {
                                             signed: true, decimal: true),
                                     inputDecoration: InputDecorations
                                         .buildInputDecoration_phone(
-                                            hint_text: "01710 333 558"),
+                                            hint_text: "017X0 XXX 55X"),
                                     onSaved: (PhoneNumber number) {
                                       print('On Saved: $number');
                                     },
@@ -502,19 +503,15 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                         ),
-                        Visibility(
-                          visible:
-                              allow_google_login.$ || allow_facebook_login.$,
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 20.0),
-                            child: Center(
-                                child: Text(
-                              AppLocalizations.of(context)
-                                  .login_screen_login_with,
-                              style: TextStyle(
-                                  color: MyTheme.medium_grey, fontSize: 14),
-                            )),
-                          ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                          child: Center(
+                              child: Text(
+                            AppLocalizations.of(context)
+                                .login_screen_login_with,
+                            style: TextStyle(
+                                color: MyTheme.medium_grey, fontSize: 14),
+                          )),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 30.0),
@@ -522,48 +519,44 @@ class _LoginState extends State<Login> {
                             child: Container(
                               width: 120,
                               child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Visibility(
-                                    visible: allow_google_login.$,
-                                    child: InkWell(
-                                      onTap: () {
-                                        onPressedGoogleLogin();
-                                      },
-                                      child: Container(
-                                        width: 28,
-                                        child: Image.asset(
-                                            "assets/google_logo.png"),
-                                      ),
+                                  InkWell(
+                                    onTap: () {
+                                      onPressedGoogleLogin();
+                                    },
+                                    child: Container(
+                                      width: 28,
+                                      child:
+                                          Image.asset("assets/google_logo.png"),
                                     ),
                                   ),
-                                  Visibility(
-                                    visible: allow_facebook_login.$,
-                                    child: InkWell(
-                                      onTap: () {
-                                        onPressedFacebookLogin();
-                                      },
-                                      child: Container(
-                                        width: 28,
-                                        child: Image.asset(
-                                            "assets/facebook_logo.png"),
-                                      ),
-                                    ),
-                                  ),
-                                  Visibility(
-                                    visible: allow_twitter_login.$,
-                                    child: InkWell(
-                                      onTap: () {
-                                        onPressedTwitterLogin();
-                                      },
-                                      child: Container(
-                                        width: 28,
-                                        child: Image.asset(
-                                            "assets/twitter_logo.png"),
-                                      ),
-                                    ),
-                                  ),
+                                  // Visibility(
+                                  //   visible: allow_facebook_login.$,
+                                  //   child: InkWell(
+                                  //     onTap: () {
+                                  //       onPressedFacebookLogin();
+                                  //     },
+                                  //     child: Container(
+                                  //       width: 28,
+                                  //       child: Image.asset(
+                                  //           "assets/facebook_logo.png"),
+                                  //     ),
+                                  //   ),
+                                  // ),
+                                  // Visibility(
+                                  //   visible: allow_twitter_login.$,
+                                  //   child: InkWell(
+                                  //     onTap: () {
+                                  //       onPressedTwitterLogin();
+                                  //     },
+                                  //     child: Container(
+                                  //       width: 28,
+                                  //       child: Image.asset(
+                                  //           "assets/twitter_logo.png"),
+                                  //     ),
+                                  //   ),
+                                  // ),
                                 ],
                               ),
                             ),

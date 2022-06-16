@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "190804534387-ihjtetu07j2cdheu166bd47jn3e0q8sr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usbdshopping.com.androidapp",
+            "certificate_hash": "72bb03a7b3b7a79ba01018debaca5c525ffe5dd1"
+          }
+        },
+        {
           "client_id": "190804534387-biutptubgug9b0927vdh4su35rial5nl.apps.googleusercontent.com",
           "client_type": 3
         }
