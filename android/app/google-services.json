@@ -1,49 +1,57 @@
 {
   "project_info": {
-    "project_number": "190804534387",
-    "project_id": "usbd-shopping-9c85c",
-    "storage_bucket": "usbd-shopping-9c85c.appspot.com"
+    "project_number": "2332759717",
+    "project_id": "usbd-new",
+    "storage_bucket": "usbd-new.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:190804534387:android:a37c1dcd9f68e0b1d43606",
+        "mobilesdk_app_id": "1:2332759717:android:61939fd45761e988e05f4c",
         "android_client_info": {
-          "package_name": "com.usbdshopping.com.androidapp"
+          "package_name": "com.usbdshopping"
         }
       },
       "oauth_client": [
         {
-          "client_id": "190804534387-8g8gjkd62oah4hr20mruo5dr5rc19q7m.apps.googleusercontent.com",
+          "client_id": "2332759717-3c1cugut5oim1q4bgit3b7o67o6b49ut.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.usbdshopping.com.androidapp",
-            "certificate_hash": "65d470f98823fc5fb1c7797c6da465218fa6c8bf"
-          }
-        },
-        {
-          "client_id": "190804534387-ihjtetu07j2cdheu166bd47jn3e0q8sr.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.usbdshopping.com.androidapp",
+            "package_name": "com.usbdshopping",
             "certificate_hash": "72bb03a7b3b7a79ba01018debaca5c525ffe5dd1"
           }
         },
         {
-          "client_id": "190804534387-biutptubgug9b0927vdh4su35rial5nl.apps.googleusercontent.com",
+          "client_id": "2332759717-60pt287460i36ll5bq1f1hv7eo1196kq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usbdshopping",
+            "certificate_hash": "f51067723cbe5c5b0cadaca26f6880a923f68a5d"
+          }
+        },
+        {
+          "client_id": "2332759717-6s49n5g6l7in4jc07qs7vehrma5ulbjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usbdshopping",
+            "certificate_hash": "65d470f98823fc5fb1c7797c6da465218fa6c8bf"
+          }
+        },
+        {
+          "client_id": "2332759717-k23dm7s5rui6fnufr53dn6h1gr1g283j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDAqDsDYaDiDk0_mCRRsEfMHx8b5tOHtFk"
+          "current_key": "AIzaSyA-YMtLFX9bDOx4p0VixcOmzcsIKoQBB6E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "190804534387-biutptubgug9b0927vdh4su35rial5nl.apps.googleusercontent.com",
+              "client_id": "2332759717-k23dm7s5rui6fnufr53dn6h1gr1g283j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
